@@ -12,7 +12,7 @@ public class Screwdriver extends Person implements FoundAction{
     }
 
     @Override
-    public void BeFound() {
+    public void beFound() {
         System.out.println(this.getName() + " was found ");
     }
 

@@ -25,12 +25,12 @@ public class Gvozdyk extends Person implements SpecialAction, FoundAction {
     }
 
     @Override
-    public void BeFound() {
+    public void beFound() {
         System.out.println(this.getName() + " was seen on the " + this.getLocation());
     }
 
     @Override
-    public void Action() {
+    public void action() {
         System.out.println(this.getName() + " sat on the beach in only his " + this.getClothes() + " and washed his clothes");
     }
 
