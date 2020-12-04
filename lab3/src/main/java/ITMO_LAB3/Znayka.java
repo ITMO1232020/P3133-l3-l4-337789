@@ -12,8 +12,8 @@ public class Znayka extends Person implements MoveAction {
     }
 
     @Override
-    public void move(Locations location) {
-        System.out.println(this.getName() + " left to " + location );
+    public String move(Locations location) {
+        return (this.getName() + " left to " + location);
     }
 
     @Override
