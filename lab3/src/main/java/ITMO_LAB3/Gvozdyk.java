@@ -20,18 +20,18 @@ public class Gvozdyk extends Person implements SpecialAction, FoundAction {
         this.Clothes = clothes;
     }
 
-    public void beReeducated(){
-        System.out.println(this.getName() + " had been re-educated");
+    public String beReeducated(){
+        return (this.getName() + " had been re-educated");
     }
 
     @Override
-    public void beFound() {
-        System.out.println(this.getName() + " was seen on the " + this.getLocation());
+    public String beFound() {
+        return (this.getName() + " was seen on the " + this.getLocation());
     }
 
     @Override
-    public void action() {
-        System.out.println(this.getName() + " sat on the beach in only his " + this.getClothes() + " and washed his clothes");
+    public String action() {
+        return (this.getName() + " sat on the beach in only his " + this.getClothes() + " and washed his clothes");
     }
 
     @Override
