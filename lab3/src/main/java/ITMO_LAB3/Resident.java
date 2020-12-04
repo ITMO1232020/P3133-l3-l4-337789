@@ -36,21 +36,21 @@ public class Resident extends Person implements MoveAction, SpecialAction{
     }
 
     @Override
-    public void move(Locations place) {
-        System.out.println(this.getName() + " walked" + " on " + place + " with  " + this.getMood());
+    public String move(Locations place) {
+        return this.getName() + " walked" + " on " + place + " with  " + this.getMood();
     }
 
     @Override
-    public void action() {
-        System.out.println(this.getName() + " fear that Gvozdyk would start breaking glass again");
+    public String action() {
+        return (this.getName() + " fear that Gvozdyk would start breaking glass again");
     }
 
-    static void countBeliever(){
-        System.out.println("There are " + Integer.toString(numResidents) + " residents in town but only " + Integer.toString(numBeliever) + " people believe in this re-education");
+    static String countBeliever(){
+        return ("There are " + Integer.toString(numResidents) + " residents in town but only " + Integer.toString(numBeliever) + " people believe in this re-education");
     }
 
-    public void lookAtSomeOne(String Name, String How){
-        System.out.println(this.getName() + " looked at "+ Name + " " + How);
+    public String lookAtSomeOne(String Name, String How){
+        return this.getName() + " looked at "+ Name + " " + How;
     }
 
     @Override
