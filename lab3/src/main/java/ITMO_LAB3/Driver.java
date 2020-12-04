@@ -22,22 +22,22 @@ class Driver extends Person implements MoveAction, FoundAction, SpecialAction{
         return this.transport;
     }
     @Override
-    public void action() { // know something
-        System.out.println(this.getName() + " knew that Znayka was going to the Green City");
+    public String action() { // know something
+        return (this.getName() + " knew that Znayka was going to the Green City");
     }
 
     @Override
-    public void move(Locations location) {
-        System.out.println(this.getName() + " left to " + location + " by " + this.getTransport());
+    public String move(Locations location) {
+        return (this.getName() + " left to " + location + " by " + this.getTransport());
     }
 
-    public void volunteerAction(String Name){
-        System.out.println(this.getName() + " volunteered to take "+ Name);
+    public String volunteerAction(String Name){
+        return (this.getName() + " volunteered to take "+ Name);
     }
 
     @Override
-    public void beFound(){
-        System.out.println(this.getName() + " was found");
+    public String beFound(){
+        return (this.getName() + " was found");
     }
 
     @Override
