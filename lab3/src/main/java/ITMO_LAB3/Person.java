@@ -7,8 +7,8 @@ public abstract class Person{
     private String Mood;
     private Locations location;
 
-    static void glad(){
-        System.out.println("Everyone is glad that the Dragon was gone");
+    static String glad(){
+        return ("Everyone is glad that the Dragon was gone");
     }
     public void setLocation(Locations location) {
         this.location = location;
